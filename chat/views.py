@@ -9,6 +9,8 @@ from .forms import SignUpForm
 from .models import Message
 from django.db.models import Q
 
+def landing_page(request):
+    return render(request, 'landing.html')
 
 def signup(request):
     """
